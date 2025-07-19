@@ -7,7 +7,7 @@ const cors=require('cors');
 const technicianRouter=require('./routes/technicianRouter');
 const authRouter=require('./routes/authRouter');
 const corsOptions={
-    origin:["http://localhost:5173"],
+    origin:["https://local-technician-finder.onrender.com"],
 }
 const bookingRouter= require('./routes/bookingRouter');
 const reviewRouter = require('./routes/reviewRouter');
