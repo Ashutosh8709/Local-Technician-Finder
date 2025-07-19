@@ -32,12 +32,12 @@ export default function AllTechnicians(){
     }
 
     const getTechnicians=async()=>{
-        const response=await axios.get("http://localhost:8080/technicians");
+        const response=await axios.get("https://local-technician-finder.onrender.com/technicians");
         setTechnicians(response.data);
     }
 
     const getReviews=async(techid)=>{
-      const response=await axios.get(`http://localhost:8080/review/${techid}`);
+      const response=await axios.get(`https://local-technician-finder.onrender.com/review/${techid}`);
       setReviews(response.data.reviews);
     }
 
@@ -50,7 +50,7 @@ export default function AllTechnicians(){
       return;
   }
       try{
-        const res=await axios.post('http://localhost:8080/review',{
+        const res=await axios.post('https://local-technician-finder.onrender.com/review',{
           technicianId:selectedTechnician._id,
           userId:userId,
           rating:reviewForm.rating,

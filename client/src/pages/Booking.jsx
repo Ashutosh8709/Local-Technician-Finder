@@ -52,7 +52,7 @@ if (!data || !data.selectedTechnician) {
         return date === slots.date && time === slots.timeSlot;
         });
         try{
-            const res = await axios.post("http://localhost:8080/booking", {
+            const res = await axios.post("https://local-technician-finder.onrender.com/booking", {
                 userId:data.userId,
                 technicianId:techid,
                 slot: matchingSlot // full ISO slot to be removed

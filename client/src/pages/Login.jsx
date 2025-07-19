@@ -27,7 +27,7 @@ function Login() {
       return handleError("All fields are required");
     }
     try{
-      const url='http://localhost:8080/auth/login';
+      const url='https://local-technician-finder.onrender.com/auth/login';
       const response = await axios.post(url,loginInfo);
       const result=await response.data;
       const {success,message,jwtToken,userId,name,error}=result;
