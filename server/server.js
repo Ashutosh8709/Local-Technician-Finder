@@ -7,7 +7,7 @@ const cors=require('cors');
 const technicianRouter=require('./routes/technicianRouter');
 const authRouter=require('./routes/authRouter');
 const corsOptions={
-    origin:["https://local-technician-finder.onrender.com"],
+    origin:["https://localhands.vercel.app"],
 }
 const bookingRouter= require('./routes/bookingRouter');
 const reviewRouter = require('./routes/reviewRouter');
